@@ -161,6 +161,14 @@ Q23. Write a code that displays the sum of all the even numbers from the given l
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
 
+Ans: 
+numbers = [12, 75, 150, 180, 145, 525, 50]
+sum = 0
+for i in numbers: 
+  if i % 2 == 0 : 
+    sum = sum + i
+print("The sum of even no :",sum)    
+
 
 Q24. Write a code to take 3 numbers as an input from the user and display the greatest no as output.
 
@@ -189,3 +197,14 @@ Q25. Write a program to display only those numbers from a list that satisfy the 
 ```
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
+
+Ans : 
+
+numbers = [12, 75, 150, 180, 145, 525, 50]
+for i in numbers : 
+  if i >150 : 
+    if i > 500 :
+      break
+    continue
+  if i % 5 == 0 :
+     print(i)
