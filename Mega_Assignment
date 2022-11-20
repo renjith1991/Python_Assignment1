@@ -48,7 +48,7 @@ A variable is created the moment you first assign a value to it.
 
 Q6. How can we take an input from the user in Python?
 
-Ans: using the ketword : input()
+Ans: using the keyword : input()
 
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
 
@@ -197,8 +197,6 @@ Q25. Write a program to display only those numbers from a list that satisfy the 
 numbers = [12, 75, 150, 180, 145, 525, 50]
 ```
 
-Q26. What is a string? How can we declare string in Python?
-
 Ans : 
 numbers = [12, 75, 150, 180, 145, 525, 50]
 for i in numbers : 
@@ -209,13 +207,28 @@ for i in numbers :
   if i % 5 == 0 :
      print(i)
 
+Q26. What is a string? How can we declare string in Python?
+
+Ans : strings in Python are arrays of bytes representing unicode characters
+Strings can be created by enclosing characters inside a single quote or double-quotes. 
+Even triple quotes can be used in Python but generally used to represent multiline strings and docstrings.
+
 Q27. How can we access the string using its index?
+
+Ans : 
+The individual characters in a string can be accessed by specifying the string name followed by a number in square brackets ( [] )
+eg : 
+string = "Hello World!"
+print(string[4])
 
 Q28. Write a code to get the desired output of the following
 ```
 string = "Big Data iNeuron"
 desired_output = "iNeuron"
 ```
+Ans : string = "Big Data iNeuron"
+for i in string[9:len(string)] :
+  print(i)
 
 Q29. Write a code to get the desired output of the following
 ```
