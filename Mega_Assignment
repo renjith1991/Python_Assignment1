@@ -235,10 +235,23 @@ Q29. Write a code to get the desired output of the following
 string = "Big Data iNeuron"
 desired_output = "norueNi"
 ```
+string = "Big Data iNeuron"
+print(string[16:8:-1])
 
 Q30. Resverse the string given in the above question.
 
+Ans : 
+string = "Big Data iNeuron"
+print(string[16::-1])
+
 Q31. How can you delete entire string at once?
+
+Ans: 
+string = "Big Data iNeuron"
+print("String before remove :",string)
+string = string.replace("Big Data iNeuron", " ")
+print("String After remove :",string)
+
 
 Q32. What is escape sequence?
 
