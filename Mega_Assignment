@@ -321,9 +321,27 @@ print(thistuple)
 
 Q42. Create a tuple and try to add your name in the tuple. Are you able to do it? Support your answer with reason.
 
+Ans: 
+tuplex = ('Hello','welcome') 
+print(tuplex)
+Tuples are immutable, so you can not add new elements
+
 Q43. Can two tuple be appended. If yes, write a code for it. If not, why?
+Ans: yes, we can appedent 2 tuples usinf + 
+
+tuple1 =(1,2,3,4)
+tuple2 =(5,6,7,8)
+print(tuple1)
+print(tuple2)
+print(tuple1+tuple2)
 
 Q44. Take a tuple as an input and print the count of elements in it.
+
+Ans : 
+m1 = tuple(input('Enter the item to Tuple: ').split())
+print("The Tuple elements are : ",m1)
+print("The length of Tuple : ",len(m1))
+
 
 Q45. What are sets in Python?
 
