@@ -345,49 +345,138 @@ print("The length of Tuple : ",len(m1))
 
 Q45. What are sets in Python?
 
+Ans: Sets are used to store multiple items in a single variable
+
 Q46. How can you create a set?
+
+Ans : Set can be created uisng ()
+set1 = set()
+set1.add(1)
+set1.add(2)
+print(set1)
 
 Q47. Create a set and add "iNeuron" in your set.
 
+Ans: 
+set1 = set()
+set1.add("iNeuron")
+print(set1)
+
 Q48. Try to add multiple values using add() function.
+Ans : 
+set1 = set()
+set1.add(1)
+set1.add(2)
+print(set1)
+
 
 Q49. How is update() different from add()?
 
+Ans: 
+We use add() method to add single value to a set. We use update() method to add sequence values to a set.
+
 Q50. What is clear() in sets?
+Ans : The clear() method removes all the elements from a list.
 
 Q51. What is frozen set?
 
+Ans : Frozen set is just an immutable version of a Python set object.
+
 Q52. How is frozen set different from set?
+Ans : A frozenset is an unordered and unindexed collection of unique elements.
 
 Q53. What is union() in sets? Explain via code.
 
+Ans :The union() method returns a set that contains all items from the original set, and all items from the specified set(s).
+set1={1,2,3,5}
+set2={6,7,8,9}
+print(set1|set2)
+
 Q54. What is intersection() in sets? Explain via code.
+
+Ans: The intersection() method returns a set that contains the similarity between two or more sets.
+set1={1,2,3,5}
+set2={6,7,2,5}
+print(set1 & set2)
 
 Q55. What is dictionary ibn Python?
 
+Ans : Dictionaries are used to store data values in key:value pairs
+
 Q56. How is dictionary different from all other data structures.
 
+Ans: A dictionary is a general-purpose data structure for storing a group of objects. A dictionary has a set of keys and each key has a single associated value.
+
 Q57. How can we delare a dictionary in Python?
+
+Ans : Dictionaries are written with curly brackets, and have keys and values:
+eg: 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
 
 Q58. What will the output of the following?
 ```
 var = {}
 print(type(var))
 ```
+Ans : <class 'dict'>
 
 Q59. How can we add an element in a dictionary?
 
+Ans: 
+Adding an item to the dictionary is done by using a new index key and assigning a value to it:
+for eg: thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
+thisdict["colour"] = "Red"  # Add value to dict
+print(thisdict)
+
+
 Q60. Create a dictionary and access all the values in that dictionary.
+
+Ans: 
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)
 
 Q61. Create a nested dictionary and access all the element in the inner dictionary.
 
+Ans: 
+family = {
+  "child1" : {
+    "name" : "Renjith",
+    "year" : 1992
+  },
+  "child2" : {
+    "name" : "Minu",
+    "year" : 1992
+  }
+}
+print(family)
+
 Q62. What is the use of get() function?
 
+Ans: The get() method returns the value of the item with the specified key.
+
 Q63. What is the use of items() function?
+Ans : The items() method is used to return the list with all dictionary keys with values.
 
 Q64. What is the use of pop() function?
+Ans : Python list pop() is an inbuilt function in Python that removes and returns the last value from the List or the given index value
 
 Q65. What is the use of popitems() function?
+Ans : The popitem() method removes the item that was last inserted into the dictionary
+
 
 Q66. What is the use of keys() function?
 
