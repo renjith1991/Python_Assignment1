@@ -480,19 +480,35 @@ Ans : The popitem() method removes the item that was last inserted into the dict
 
 Q66. What is the use of keys() function?
 
+Ans: 
+The keys() method Return the keys in the dictionary:
+
 Q67. What is the use of values() function?
 
+Ans: The values() method returns the Values in the dictionary:
+
 Q68. What are loops in Python?
+Ans: Loops are a sequence of instructions that does a specific set of instructions or 
+tasks based on some conditions and continue the tasks until it reaches certain conditions.
+eg, for loop, while loop, nested loop
 
 Q69. How many type of loop are there in Python?
+Ans: 2 Type of loops. for loop, while loop. 
 
 Q70. What is the difference between for and while loops?
+Ans:  
+for loop is used when the number of iterations is known, whereas execution is done in the while loop until the statement in the program is proved wrong. 
 
 Q71. What is the use of continue statement?
 
+Ans: The continue statement passes control to the next iteration
+
 Q72. What is the use of break statement?
 
+Ans: The purpose the break statement is to break out of a loop early
+
 Q73. What is the use of pass statement?
+Ans:  The pass statement is a null statement which can be used as a placeholder for future code
 
 Q74. What is the use of range() function?
 
