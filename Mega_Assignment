@@ -512,8 +512,12 @@ Ans:  The pass statement is a null statement which can be used as a placeholder 
 
 Q74. What is the use of range() function?
 
+Ans: The range() function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and stops before a specified number.
+syntax: range(start, stop, step)
+
 Q75. How can you loop over a dictionary?
 
+Ans: You can loop through a dictionary by using a for loop.
 
 ### Coding problems
 Q76. Write a Python program to find the factorial of a given number.
