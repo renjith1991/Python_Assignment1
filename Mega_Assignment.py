@@ -637,7 +637,24 @@ else:
 
 Q87. Write a Python program to remove i'th element from a string.
 
+Ans: 
+input_str=input("Enter the string: ")
+print("The string is : ",input_str)
+index= int(input("Enter the index of the element to remove:"))
+new_string=input_str[:index]+input_str[index+1:]
+print("The New string is : ",new_string)
+
 Q88. Write a Python program to check if a substring is present in a given string.
+
+Ans: 
+input_string = input("Enter the main string: ")
+input_substring = input("Enter the substring to check: ")
+
+if input_substring in input_string:
+    print("Substring is present in the string.")
+else:
+    print("Substring is not present in the string.")
+
 
 Q89. Write a Python program to find words which are greater than given length k.
 
