@@ -609,9 +609,31 @@ print("List elements after swapping:", list1)
 
 Q84. Write a Python program to find N largest element from a list.
 
+Ans: 
+list1 = input("Enter the List elements separated by space: ").split()
+print("List elements:", list1)
+print('The largest list element is :',max(list1))
+
+
 Q85. Write a Python program to find cumulative sum of a list.
 
+Ans : 
+list1 = input("Enter the List elements separated by space: ").split()
+list1 = [int(element) for element in list1]
+print("List elements:", list1)
+print('The Sum is List elements :',sum(list1))
+
 Q86. Write a Python program to check if a string is palindrome or not.
+
+ans: 
+list1=input("Enter the string: ")
+print("The string is : ",list1)
+list2=list1[::-1]
+print("The Reverse List is: ",list2)
+if list1==list2:
+    print("It's Palindrome..!!")
+else: 
+    print("It's not Palindrome..!!")
 
 Q87. Write a Python program to remove i'th element from a string.
 
