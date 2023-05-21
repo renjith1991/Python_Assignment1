@@ -52,7 +52,7 @@ Ans: using the keyword : input()
 
 Q7. What is the default datatype of the value that has been taken as an input using input() function?
 
-Ans: Integer
+Ans: String
 
 Q8. What is type casting?
 
@@ -581,12 +581,31 @@ else:
 
 
 Q81. Write a Python program to find the n-th Fibonacci Number.
-
-
+Ans: 
+num = int(input("Enter the N-th Fibonacci:"))
+fib_set = [0,1,1]
+for i in range(3,num):
+        fib_set.append(fib_set[i-1]+fib_set[i-2])
+print("The Fibonacci series :",fib_set)
+print("The N-th Fibonacci no :",fib_set[-1])
 
 Q82. Write a Python program to interchange the first and last element in a list.
+Ans: 
+list1 = input("Enter the List elements separated by space: ").split()
+print("List elements before swapping:", list1)
+list1[0],list1[-1]=list1[-1],list1[0]
+print("List elements after swapping:", list1)
 
 Q83. Write a Python program to swap two elements in a list.
+
+Ans: 
+list1 = input("Enter the List elements separated by space: ").split()
+print("List elements before swapping:", list1)
+a=int(input("Enter the 1st index positions to swap:"))
+b=int(input("Enter the 2nd index positions to swap:"))
+list1[a],list1[b]=list1[b],list1[a]
+print("List elements after swapping:", list1)
+
 
 Q84. Write a Python program to find N largest element from a list.
 
