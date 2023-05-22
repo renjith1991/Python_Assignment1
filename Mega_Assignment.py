@@ -658,33 +658,122 @@ else:
 
 Q89. Write a Python program to find words which are greater than given length k.
 
+Ans: 
+    
+words = ["apple", "banana", "orange", "grapefruit", "kiwi", "pear"]
+length_threshold = 5
+
+words_greater_than_length = []
+for word in words:
+    if len(word) > length_threshold:
+        words_greater_than_length.append(word)
+
+print("Words greater than length", length_threshold, ":")
+print(words_greater_than_length)
+
+
 Q90. Write a Python program to extract unquire dictionary values.
 
+Ans:
+ my_dict = {
+    "key1": "value1",
+    "key2": "value2",
+    "key3": "value1",
+    "key4": "value3",
+    "key5": "value2"
+}
+
+unique_values = list(set(my_dict.values()))
+print("Unique dictionary values:")
+print(unique_values)
+
+
 Q91. Write a Python program to merge two dictionary.
+
+Ans : 
+    
+    dict1 = {
+    "Name" :"Renjith",
+    "age"  :"31",
+    "Place":"Delhi"
+}
+
+dict2 = {
+    "Name_1" :"Minu",
+    "age_1"  :"30",
+    "Place_1":"Delhi"
+}
+merged_dict = {**dict1, **dict2}
+print("Dict1 :",dict1)
+print("Dict2 :",dict2)
+print("Merged Dict :",merged_dict)
+
 
 Q92. Write a Python program to convert a list of tuples into dictionary.
 ```
 Input : [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
 Output : {'Sachin': 10, 'MSD': 7, 'Kohli': 18, 'Rohit': 45}
 ```
+Ans:
+    
+input_list = [('Sachin', 10), ('MSD', 7), ('Kohli', 18), ('Rohit', 45)]
+output_dict = {}
+for i in input_list:
+    key, value =i 
+    output_dict[key] = value 
+print("Input List :",input_list)
+print("Output Dict : ",output_dict)
+
 
 Q93. Write a Python program to create a list of tuples from given list having number and its cube in each tuple.
 ```
 Input: list = [9, 5, 6]
 Output: [(9, 729), (5, 125), (6, 216)]
 ```
+Ans: 
+input_list = [9, 5, 6]
+output_tup = []
+for i in input_list:
+    print(i)
+    output_tup.append((i, i**3))
+print("Input List is : ",input_list)
+print("Output Tuple is : ",output_tup)
+
 
 Q94. Write a Python program to get all combinations of 2 tuples.
 ```
 Input : test_tuple1 = (7, 2), test_tuple2 = (7, 8)
 Output : [(7, 7), (7, 8), (2, 7), (2, 8), (7, 7), (7, 2), (8, 7), (8, 2)]
 ```
+Ans: 
+    
+test_tuple1 = (7, 2)
+test_tuple2 = (7, 8)
+test_tuple3 = ()
+for i in test_tuple1:
+    for j in test_tuple2:
+        test_tuple3 += ((i,j),)
+for i in test_tuple2:
+    for j in test_tuple1:
+        test_tuple3 += ((i,j),)
+        # test_tuple3=test_tuple3((test_tuple1[i],test_tuple2[j]))
+
+print("Output Tuple is :",test_tuple3)
+
 
 Q95. Write a Python program to sort a list of tuples by second item.
 ```
 Input : [('for', 24), ('Geeks', 8), ('Geeks', 30)] 
 Output : [('Geeks', 8), ('for', 24), ('Geeks', 30)]
 ```
+
+Ans: 
+input_list = [('for', 24), ('Geeks', 8), ('Geeks', 30)]
+output_list = sorted(input_list, key=lambda x: x[1])
+print("Output:")
+print(output_list)
+
+
 
 Q96. Write a python program to print below pattern.
 ```
@@ -694,6 +783,15 @@ Q96. Write a python program to print below pattern.
 * * * * 
 * * * * * 
 ```
+Ans: 
+    
+limit= int(input("Enter the limit :"))
+for i in range(0,limit):
+    for j in range(0,i+1):
+        print("* ",end='')
+    print("\n")
+
+
 Q97. Write a python program to print below pattern.
 ```
     *
