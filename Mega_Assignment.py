@@ -800,6 +800,14 @@ Q97. Write a python program to print below pattern.
  ****
 *****
 ```
+Ans: 
+    
+num_rows = 5  
+for i in range(num_rows):
+    pattern_row = " " * (num_rows - i - 1) + "*" * (i + 1) 
+    print(pattern_row)
+
+
 
 Q98. Write a python program to print below pattern.
 ```
@@ -809,6 +817,13 @@ Q98. Write a python program to print below pattern.
  * * * * 
 * * * * * 
 ```
+Ans: 
+    num_rows = 5  # Number of rows in the pattern
+
+for i in range(num_rows):
+    pattern_row = " " * (num_rows - i - 1) + "* " * (i + 1)  # Create the pattern for the current row
+    print(pattern_row)
+
 
 Q99. Write a python program to print below pattern.
 ```
@@ -818,6 +833,14 @@ Q99. Write a python program to print below pattern.
 1 2 3 4 
 1 2 3 4 5
 ```
+Ans : 
+    
+limit= int(input("Enter the limit :"))
+for i in range(0,limit):
+    for j in range(1,i+1):
+        print(j,end=' ')
+    print("\n")
+
 
 Q100. Write a python program to print below pattern.
 ```
@@ -825,4 +848,15 @@ A
 B B 
 C C C 
 D D D D 
-E E E E E 
+E E E E E
+
+Ans: 
+    
+num_rows = 5 
+start_char = 65
+
+for i in range(num_rows):
+    current_char = chr(start_char + i) 
+    pattern_row = current_char + " " * i 
+    print(pattern_row)
+
